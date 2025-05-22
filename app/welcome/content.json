@@ -15,8 +15,8 @@
     "mobileCta": { "text": "Sign Up FREE!", "href": "/signup", "cta": true }
   },
   "hero": {
-    "heading": "Get Mind-Blowing Videos from Your Fave Pakistani Celebs!",
-    "subheading": "Birthdays, Eid, Anniversaries, or just a fun surprise. Make it UNFORGETTABLE!",
+    "heading": "Where stars and fans collide!",
+    "subheading": "Get Mind-Blowing Videos from Your Favorite Pakistani Celebs",
     "searchPlaceholder": "Find Atif, Mahira, Babar... or your chosen star!",
     "searchButtonText": "Find!",
     "explore": { "text": "Explore All Stars!", "href": "/browse" }
@@ -113,12 +113,12 @@
     "title": "Find Your Favorite Category",
     "baseHref": "/browse",
     "categories": [
-      { "category": "actors", "iconClass": "fas fa-theater-masks", "title": "Actors Guild" },
-      { "category": "actresses", "iconClass": "fas fa-female", "title": "Leading Ladies" },
-      { "category": "singers", "iconClass": "fas fa-microphone-stand", "title": "Vocal Stars" },
-      { "category": "cricketers", "iconClass": "fas fa-baseball-ball", "title": "Cricket Heroes" },
-      { "category": "influencers", "iconClass": "fas fa-hashtag", "title": "Trendsetters" },
-      { "category": "comedians", "iconClass": "fas fa-grin-beam-sweat", "title": "Laugh Lords" }
+      { "category": "actors", "image": "https://sm.mashable.com/t/mashable_me/photo/default/untitled-design-3_7mrc.1248.jpg", "title": "Actors Guild" },
+      { "category": "actresses", "image": "https://dailytimes.com.pk/assets/uploads/2022/11/10/1-2.jpeg", "title": "Leading Ladies" },
+      { "category": "singers", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0VB5W7H8xEnG4qHyudLbfYmOHtNce_4pkQ&s", "title": "Vocal Stars" },
+      { "category": "cricketers", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRolziUJIZNIYddty3Yd0iJxC3ZJ8tUabb2aw&s", "title": "Cricket Heroes" },
+      { "category": "influencers", "image": "https://www.ccny.cuny.edu/sites/default/files/styles/600px_wide/public/2023-04/Screenshot%202023-04-18%20at%2012.09.01%20PM.png?itok=__JCbgWG", "title": "Trendsetters" },
+      { "category": "comedians", "image": "https://dailytimes.com.pk/assets/uploads/2022/11/10/1-2.jpeg", "title": "Laugh Lords" }
     ],
     "cta": { "text": "Explore All Categories", "href": "/browse" }
   },

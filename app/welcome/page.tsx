@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 import content from './content.json'
 import './styles.css'
-import Image from 'next/image'
+import CategoriesSection from '@/components/categoriesCircle'
+
 
 export default function Page() {
     const [mobileOpen, setMobileOpen] = useState(false)
@@ -104,10 +104,10 @@ export default function Page() {
                 />
                 <div className="relative z-10"></div>
                 <div className="container mx-auto px-6 text-center">
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+                    <h1 className=" md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg" style={{ "fontSize": "6rem" }}>
                         {content.hero.heading}
                     </h1>
-                    <p className="text-xl md:text-2xl mb-10 text-blue-200">{content.hero.subheading}</p>
+                    <p className="text-xl md:text-2xl mb-10 text-blue-100 italic" style={{ "fontWeight":"500","fontSize": "2rem" }}>{content.hero.subheading}</p>
                     <form
                         className="max-w-xl mx-auto mb-10"
                         onSubmit={(e) => {
@@ -270,32 +270,11 @@ export default function Page() {
 
             {/* Categories */}
             <section className="py-20 bg-white">
-                <div className="container mx-auto px-6">
-                    <h2 className="section-title text-center">{content.categoriesSection.title}</h2>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-8">
-                        {content.categoriesSection.categories.map((c) => (
-                            <Link
-                                key={c.category}
-                                href={`${content.categoriesSection.baseHref}?category=${c.category}`}
-                                className="block bg-blue-50 p-6 rounded-2xl shadow-lg hover:shadow-blue-200/50 transition-shadow duration-300 text-center card-hover"
-                            >
-                                <div className="text-4xl text-brand mb-2">
-                                    <i className={c.iconClass}></i>
-                                </div>
-                                <h4 className="font-semibold text-gray-700">{c.title}</h4>
-                            </Link>
-                        ))}
-                    </div>
-                    <div className="text-center mt-12">
-                        <Link href={content.categoriesSection.cta.href} className="text-brand hover:text-brand-secondary font-semibold text-lg">
-                            {content.categoriesSection.cta.text} <i className="fas fa-arrow-right ml-1"></i>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+                <CategoriesSection {...content.categoriesSection} />
+        </section >
 
-            {/* Testimonials */}
-            <section className="py-20 bg-blue-50">
+            {/* Testimonials */ }
+            < section className = "py-20 bg-blue-50" >
                 <div className="container mx-auto px-6">
                     <h2 className="section-title text-center">{content.testimonialsSection.title}</h2>
                     <div className="grid md:grid-cols-3 gap-10">
@@ -318,83 +297,83 @@ export default function Page() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
-            {/* Final CTA */}
-            <section className="py-24 hero-bg text-white">
-                <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-6">{content.finalCta.heading}</h2>
-                    <p className="text-xl md:text-2xl mb-10 text-blue-200">{content.finalCta.subheading}</p>
-                    <div className="space-y-5 md:space-y-0 md:space-x-6">
-                        <Link
-                            href={content.finalCta.find.href}
-                            className="btn-secondary font-bold py-4 px-12 text-lg shadow-xl transform hover:scale-105 transition duration-300 inline-block"
-                        >
-                            {content.finalCta.find.text}
-                        </Link>
-                        <Link
-                            href={content.finalCta.signup.href}
-                            className="bg-white text-brand font-bold py-3.5 px-10 rounded-full hover:bg-blue-100 transition duration-300 text-lg shadow-xl inline-block transform hover:scale-105"
-                        >
-                            {content.finalCta.signup.text}
-                        </Link>
-                    </div>
+        {/* Final CTA */ }
+        < section className = "py-24 hero-bg text-white" >
+            <div className="container mx-auto px-6 text-center">
+                <h2 className="text-4xl md:text-5xl font-extrabold mb-6">{content.finalCta.heading}</h2>
+                <p className="text-xl md:text-2xl mb-10 text-blue-200">{content.finalCta.subheading}</p>
+                <div className="space-y-5 md:space-y-0 md:space-x-6">
+                    <Link
+                        href={content.finalCta.find.href}
+                        className="btn-secondary font-bold py-4 px-12 text-lg shadow-xl transform hover:scale-105 transition duration-300 inline-block"
+                    >
+                        {content.finalCta.find.text}
+                    </Link>
+                    <Link
+                        href={content.finalCta.signup.href}
+                        className="bg-white text-brand font-bold py-3.5 px-10 rounded-full hover:bg-blue-100 transition duration-300 text-lg shadow-xl inline-block transform hover:scale-105"
+                    >
+                        {content.finalCta.signup.text}
+                    </Link>
                 </div>
-            </section>
+            </div>
+            </section >
 
-            {/* Footer */}
-            <footer className="bg-gray-900 text-gray-300 py-16">
-                <div className="container mx-auto px-6">
-                    <div className="grid md:grid-cols-3 gap-10">
-                        <div>
-                            <h3 className="text-2xl font-bold mb-4 gradient-text">{content.footer.brand}</h3>
-                            <p className="text-sm mb-4">{content.footer.description}</p>
-                            <div className="flex space-x-5">
-                                {content.footer.social.map((s) => (
-                                    <Link key={s.platform} href={s.href} className="text-gray-400 hover:text-white text-xl">
-                                        <i className={s.iconClass}></i>
+        {/* Footer */ }
+        < footer className = "bg-gray-900 text-gray-300 py-16" >
+            <div className="container mx-auto px-6">
+                <div className="grid md:grid-cols-3 gap-10">
+                    <div>
+                        <h3 className="text-2xl font-bold mb-4 gradient-text">{content.footer.brand}</h3>
+                        <p className="text-sm mb-4">{content.footer.description}</p>
+                        <div className="flex space-x-5">
+                            {content.footer.social.map((s) => (
+                                <Link key={s.platform} href={s.href} className="text-gray-400 hover:text-white text-xl">
+                                    <i className={s.iconClass}></i>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h4 className="text-xl font-semibold text-white mb-4">{content.footer.quickLinksTitle}</h4>
+                        <ul className="space-y-2 text-sm">
+                            {content.footer.quickLinks.map((l) => (
+                                <li key={l.label}>
+                                    <Link href={l.href} className="hover:text-blue-300 transition duration-300">
+                                        {l.label}
                                     </Link>
-                                ))}
-                            </div>
-                        </div>
-                        <div>
-                            <h4 className="text-xl font-semibold text-white mb-4">{content.footer.quickLinksTitle}</h4>
-                            <ul className="space-y-2 text-sm">
-                                {content.footer.quickLinks.map((l) => (
-                                    <li key={l.label}>
-                                        <Link href={l.href} className="hover:text-blue-300 transition duration-300">
-                                            {l.label}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="text-xl font-semibold text-white mb-4">{content.footer.newsletter.title}</h4>
-                            <p className="text-sm mb-3">{content.footer.newsletter.description}</p>
-                            <form>
-                                <div className="flex">
-                                    <input
-                                        type="email"
-                                        placeholder={content.footer.newsletter.placeholder}
-                                        className="w-full px-4 py-2.5 text-sm text-gray-800 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    />
-                                    <button type="submit" className="btn-secondary px-6 py-2.5 rounded-r-full transition duration-300 -ml-1">
-                                        {content.footer.newsletter.buttonText}
-                                    </button>
-                                </div>
-                            </form>
-                            <p className="text-xs mt-4">{content.footer.newsletter.note}</p>
-                        </div>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                    <div className="mt-12 border-t border-gray-700 pt-10 text-center text-sm">
-                        <p>
-                            &copy; {year} {content.footer.brand}. {content.footer.rights}{' '}
-                            <i className="fas fa-heart text-blue-400"></i> {content.footer.craftedFor}
-                        </p>
+                    <div>
+                        <h4 className="text-xl font-semibold text-white mb-4">{content.footer.newsletter.title}</h4>
+                        <p className="text-sm mb-3">{content.footer.newsletter.description}</p>
+                        <form>
+                            <div className="flex">
+                                <input
+                                    type="email"
+                                    placeholder={content.footer.newsletter.placeholder}
+                                    className="w-full px-4 py-2.5 text-sm text-gray-800 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                />
+                                <button type="submit" className="btn-secondary px-6 py-2.5 rounded-r-full transition duration-300 -ml-1">
+                                    {content.footer.newsletter.buttonText}
+                                </button>
+                            </div>
+                        </form>
+                        <p className="text-xs mt-4">{content.footer.newsletter.note}</p>
                     </div>
                 </div>
-            </footer>
+                <div className="mt-12 border-t border-gray-700 pt-10 text-center text-sm">
+                    <p>
+                        &copy; {year} {content.footer.brand}. {content.footer.rights}{' '}
+                        <i className="fas fa-heart text-blue-400"></i> {content.footer.craftedFor}
+                    </p>
+                </div>
+            </div>
+            </footer >
         </>
     )
 }
