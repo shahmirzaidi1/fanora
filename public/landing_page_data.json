@@ -1,0 +1,140 @@
+{
+  "landing_pageTitle": "Fanora - Personalized Video Messages",
+  "landing_nav": {
+    "logoText": ["Fan", "ora"],
+    "links": [
+      {"href": "/", "text": "Home", "active": true},
+      {"href": "/browse", "text": "Browse Stars"},
+      {"href": "/how-it-works", "text": "How It Works"},
+      {"href": "/occasions", "text": "Occasions"},
+      {"href": "/auctions", "text": "Auctions"},
+      {"href": "/experiences", "text": "Experiences"}
+    ],
+    "searchIconClass": "fas fa-search",
+    "signUpButtonText": "Sign Up",
+    "signUpLink": "/signup",
+    "logInButtonText": "Log In",
+    "logInLink": "/login",
+    "mobileMenuIconClass": "fas fa-bars"
+  },
+  "landing_header": {
+    "title": "Get a Personalized Video Message from Your Favorite Pakistani Stars"
+  },
+  "landing_featuredCelebrity": {
+    "heading": "Featured Celebrity",
+    "imageSrc": "https://placehold.co/280x350/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+    "imageAlt": "Hania Aamir",
+    "fallbackImageSrc": "https://placehold.co/280x350/4A5568/EBF4FF?text=Star",
+    "name": "Hania Aamir",
+    "title": "Actress & Entertainer",
+    "description1": "Known for her vibrant personality and versatile acting skills, Hania Aamir brings joy and energy to every project. Get a personalized video from Hania to make any occasion extra special, from birthday wishes to motivational messages.",
+    "description2": "She's perfect for fun shoutouts, heartfelt greetings, or even a quick Q&A!",
+    "requestButtonText": "Request Hania (Est. PKR 10,000)",
+    "profileLink": "/profile/hania-aamir"
+  },
+  "landing_popularCelebrities": {
+    "heading": "Popular Celebrities",
+    "celebrities": [
+      { "name": "Fawad Khan", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=FK", "alt": "Fawad Khan", "delay": "100" },
+      { "name": "Mahira Khan", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=MK", "alt": "Mahira Khan", "delay": "200" },
+      { "name": "Babar Azam", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=BA", "alt": "Babar Azam", "delay": "300" },
+      { "name": "Atif Aslam", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=AA", "alt": "Atif Aslam", "delay": "100" },
+      { "name": "Saba Qamar", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=SQ", "alt": "Saba Qamar", "delay": "200" }
+    ]
+  },
+  "landing_occasions": {
+    "heading": "Occasions",
+    "items": [
+      { "name": "Birthdays", "imgSrc": "https://placehold.co/300x200/007BFF/FFFFFF?text=Birthdays", "link": "/occasions#birthday", "delay": null },
+      { "name": "Eid Greetings", "imgSrc": "https://placehold.co/300x200/005A9C/FFFFFF?text=Eid", "link": "/occasions#eid", "delay": "100" },
+      { "name": "Anniversaries", "imgSrc": "https://placehold.co/300x200/003366/FFFFFF?text=Anniversary", "link": "/occasions#anniversary", "delay": "200" },
+      { "name": "Weddings", "imgSrc": "https://placehold.co/300x200/004B8D/FFFFFF?text=Weddings", "link": "/occasions#wedding", "delay": "300" },
+      { "name": "Motivation", "imgSrc": "https://placehold.co/300x200/002D5A/FFFFFF?text=Motivation", "link": "/occasions#motivation", "delay": "100" }
+    ]
+  },
+  "landing_categories": {
+    "heading": "Categories",
+    "items": [
+      { "name": "Actors", "imgSrc": "https://placehold.co/300x200/003366/FFFFFF?text=Actors", "link": "/browse?category=actors", "delay": null },
+      { "name": "Actresses", "imgSrc": "https://placehold.co/300x200/005A9C/FFFFFF?text=Actresses", "link": "/browse?category=actresses", "delay": "100" },
+      { "name": "Singers", "imgSrc": "https://placehold.co/300x200/007BFF/FFFFFF?text=Singers", "link": "/browse?category=singers", "delay": "200" },
+      { "name": "Cricketers", "imgSrc": "https://placehold.co/300x200/004B8D/FFFFFF?text=Cricketers", "link": "/browse?category=cricketers", "delay": "300" },
+      { "name": "Influencers", "imgSrc": "https://placehold.co/300x200/002D5A/FFFFFF?text=Influencers", "link": "/browse?category=influencers", "delay": "100" }
+    ],
+    "seeMoreLinkText": "See More Categories",
+    "seeMoreLink": "/browse",
+    "seeMoreIconClass": "fas fa-arrow-right"
+  },
+  "landing_howItWorks": {
+    "heading": "How It Works",
+    "subheading": "Get started in 3 easy steps. Fanora makes it simple to connect with your favorite Pakistani influencers. Follow these steps to request a personalized video or interaction.",
+    "steps": [
+      { "iconClass": "fas fa-mouse-pointer", "title": "1. Request a Video", "description": "Choose your favorite influencer and submit a request for a personalized video or interaction. Provide all the details to make it special.", "delay": null },
+      { "iconClass": "fas fa-users", "title": "2. Connect with Influencers", "description": "The platform connects you directly with the influencer. They'll review your request and create your unique message.", "delay": "100" },
+      { "iconClass": "fas fa-gift", "title": "3. Receive Your Personalized Interaction", "description": "Get your unique video, perfect for birthdays, anniversaries, or just because! Share the joy and make memories.", "delay": "200" }
+    ],
+    "learnMoreLinkText": "Learn More Details",
+    "learnMoreLink": "/how-it-works",
+    "learnMoreIconClass": "fas fa-arrow-right"
+  },
+  "landing_reviews": {
+    "heading": "Reviews",
+    "items": [
+      { "user": "Ayesha K.", "avatarText": "A", "avatarColor": "003366", "stars": 5, "text": "Absolutely loved the video from Hania for my sister's birthday! It was so personal and she was thrilled. Fanora made it so easy!", "delay": null },
+      { "user": "Bilal M.", "avatarText": "B", "avatarColor": "005A9C", "stars": 4.5, "text": "Got a motivational message from Babar Azam for my son before his exams. He was so inspired! Great service by Fanora.", "delay": "100" },
+      { "user": "Fatima R.", "avatarText": "F", "avatarColor": "007BFF", "stars": 5, "text": "The process was smooth and the video from Atif Aslam for our anniversary was just perfect. Thank you, Fanora, for making it special!", "delay": "200" }
+    ]
+  },
+  "landing_contactCTA": {
+    "heading": "Have Questions? Contact Us",
+    "subheading": "If you have any queries about our services, how to book a star, or anything else, feel free to reach out. Our team is here to help you!",
+    "buttonText": "Contact Us",
+    "buttonLink": "/contact"
+  },
+  "landing_footer": {
+    "companyName": "Fanora",
+    "sections": [
+      {
+        "title": "Fanora",
+        "links": [
+          { "name": "About Us", "href": "/about" },
+          { "name": "Careers", "href": "/careers" },
+          { "name": "Press", "href": "/press" }
+        ]
+      },
+      {
+        "title": "For Fans",
+        "links": [
+          { "name": "Browse Stars", "href": "/browse" },
+          { "name": "How It Works", "href": "/how-it-works" },
+          { "name": "Occasions", "href": "/occasions" },
+          { "name": "Auctions", "href": "/auctions" },
+          { "name": "Experiences", "href": "/experiences" },
+          { "name": "FAQ", "href": "/faq" }
+        ]
+      },
+      {
+        "title": "For Talent",
+        "links": [
+          { "name": "Join Fanora", "href": "/for-talent" },
+          { "name": "Talent FAQ", "href": "/talent-faq" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "name": "Terms of Service", "href": "/terms" },
+          { "name": "Privacy Policy", "href": "/privacy" },
+          { "name": "Contact", "href": "/contact" }
+        ]
+      }
+    ],
+    "copyrightText": "All Rights Reserved.",
+    "socialLinks": [
+      { "iconClass": "fab fa-facebook-f", "href": "#" },
+      { "iconClass": "fab fa-instagram", "href": "#" },
+      { "iconClass": "fab fa-twitter", "href": "#" },
+      { "iconClass": "fab fa-tiktok", "href": "#" }
+    ]
+  }
+}
