@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link'; // Using Next.js Link for internal navigation
-import { LandingPageData } from '@/types/LandingPageData'; // Adjust path as needed
+import { LandingPageData } from '@/types/landingPageData'; // Adjust path as needed
 
 interface NavbarProps {
   data: LandingPageData['landing_nav'];

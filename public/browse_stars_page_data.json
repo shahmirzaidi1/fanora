@@ -1,0 +1,112 @@
+{
+  "metaTitle": "Browse Stars - Fanora",
+  "hero": {
+    "title": "Discover Your Favorite Stars",
+    "subtitle": "Find the perfect celebrity for any occasion. Filter by category, price, and more.",
+    "backgroundImageText": "Our+Star+Lineup"
+  },
+  "filters": {
+    "searchLabel": "Search by Name",
+    "searchPlaceholder": "e.g., Fawad Khan",
+    "categoryLabel": "Category",
+    "defaultCategoryOption": "All Categories",
+    "categories": [
+      { "value": "actors", "label": "Actors" },
+      { "value": "actresses", "label": "Actresses" },
+      { "value": "singers", "label": "Singers" },
+      { "value": "cricketers", "label": "Cricketers" },
+      { "value": "influencers", "label": "Influencers" },
+      { "value": "comedians", "label": "Comedians" }
+    ],
+    "priceLabel": "Price (PKR)",
+    "defaultPriceOption": "Any Price",
+    "priceRanges": [
+      { "value": "0-5000", "label": "0 - 5,000" },
+      { "value": "5001-10000", "label": "5,001 - 10,000" },
+      { "value": "10001-20000", "label": "10,001 - 20,000" },
+      { "value": "20001+", "label": "20,001+" }
+    ],
+    "applyButtonText": "Apply Filters"
+  },
+  "stars": [
+    {
+      "id": "ayeza-khan",
+      "name": "Ayeza Khan",
+      "role": "Actress",
+      "description": "Beloved TV actress, perfect for heartfelt messages.",
+      "price": "PKR 12,000",
+      "profileLink": "/profile/ayeza-khan",
+      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Ayeza Khan",
+      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "delay": null
+    },
+    {
+      "id": "fawad-khan",
+      "name": "Fawad Khan",
+      "role": "Actor & Singer",
+      "description": "International star, ideal for grand gestures.",
+      "price": "PKR 20,000",
+      "profileLink": "/profile/fawad-khan",
+      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Fawad Khan",
+      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "delay": "100"
+    },
+    {
+      "id": "mahira-khan",
+      "name": "Mahira Khan",
+      "role": "Actress",
+      "description": "Elegant superstar for memorable messages.",
+      "price": "PKR 22,000",
+      "profileLink": "/profile/mahira-khan",
+      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Mahira Khan",
+      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "delay": "200"
+    },
+    {
+      "id": "atif-aslam",
+      "name": "Atif Aslam",
+      "role": "Singer",
+      "description": "Legendary voice for truly special song dedications.",
+      "price": "PKR 25,000",
+      "profileLink": "/profile/atif-aslam",
+      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Atif Aslam",
+      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "delay": "300"
+    },
+    {
+      "id": "saba-qamar",
+      "name": "Saba Qamar",
+      "role": "Actress",
+      "description": "Bold and talented, for impactful greetings.",
+      "price": "PKR 18,000",
+      "profileLink": "/profile/saba-qamar",
+      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Saba Qamar",
+      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "delay": null
+    },
+    {
+      "id": "babar-azam",
+      "name": "Babar Azam",
+      "role": "Cricketer",
+      "description": "Get a shoutout from the cricket superstar!",
+      "price": "PKR 18,500",
+      "profileLink": "/profile/babar-azam",
+      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Babar Azam",
+      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "delay": "100"
+    }
+  ],
+  "pagination": {
+    "currentPageInfo": "Page 1 of 5",
+    "previousButtonText": "Previous",
+    "nextButtonText": "Next",
+    "previousIconClass": "fas fa-arrow-left",
+    "nextIconClass": "fas fa-arrow-right"
+  }
+}

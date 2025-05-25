@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollAnimated from './ScrollAnimated'; // Adjust the import path as needed
 import Image from 'next/image';
-import { LandingPageData } from '@/types/LandingPageData';
+import { LandingPageData } from '@/types/landingPageData';
 
 interface ReviewsProps {
   data: LandingPageData['landing_reviews'];

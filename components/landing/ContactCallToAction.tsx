@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollAnimated from './ScrollAnimated'; // Adjust the import path as needed
 import Link from 'next/link';
-import { LandingPageData } from '@/types/LandingPageData';
+import { LandingPageData } from '@/types/landingPageData';
 
 interface ContactCTAProps {
   data: LandingPageData['landing_contactCTA'];

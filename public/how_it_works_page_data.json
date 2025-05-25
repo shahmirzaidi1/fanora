@@ -1,0 +1,75 @@
+{
+  "metaTitle": "How It Works - Fanora",
+  "hero": {
+    "title": "How Fanora Works",
+    "subtitle": "Getting your personalized celebrity video is a breeze! Follow these simple steps to connect.",
+    "backgroundImageText": "Simple+Steps+to+Connect"
+  },
+  "stepsSection": {
+    "title": "Get Started in 3 Easy Steps",
+    "subtitle": "Fanora makes it simple to connect with your favorite Pakistani influencers. Follow these steps to request a personalized video or interaction.",
+    "steps": [
+      {
+        "id": "step1",
+        "iconClass": "fas fa-search",
+        "title": "1. Find Your Star",
+        "description": "Explore our diverse catalog of Pakistani celebrities. Use the search or browse by categories like actors, singers, cricketers, and more. Each profile provides details, sample work, and pricing in PKR.",
+        "imageSrc": "https://placehold.co/400x250/EBF4FF/003366?text=Step+1:+Browse",
+        "imageAlt": "Illustration for finding a star",
+        "delay": null
+      },
+      {
+        "id": "step2",
+        "iconClass": "fas fa-edit",
+        "title": "2. Request Your Video",
+        "description": "Once you've found your star, click \"Request.\" Fill in the details: who it's for, the occasion, and any specific instructions for the message. Make it personal! Then, complete the secure payment.",
+        "imageSrc": "https://placehold.co/400x250/EBF4FF/005A9C?text=Step+2:+Request",
+        "imageAlt": "Illustration for requesting a video",
+        "delay": "100"
+      },
+      {
+        "id": "step3",
+        "iconClass": "fas fa-paper-plane",
+        "title": "3. Receive & Share!",
+        "description": "The star records your personalized video. We'll email you a link to download it once ready (check profiles for estimated delivery times). Share the joy and create lasting memories!",
+        "imageSrc": "https://placehold.co/400x250/EBF4FF/007BFF?text=Step+3:+Receive",
+        "imageAlt": "Illustration for receiving video",
+        "delay": "200"
+      }
+    ],
+    "browseButton": {
+      "text": "Browse Stars Now",
+      "link": "/browse",
+      "delay": "300"
+    }
+  },
+  "tipsSection": {
+    "title": "Tips for a Great Request",
+    "tips": [
+      {
+        "id": "tip1",
+        "iconClass": "fas fa-check-circle",
+        "title": "Be Specific",
+        "description": "The more details you provide (names, inside jokes, specific phrases, the occasion), the more personal and special the video will be. However, keep it concise and clear."
+      },
+      {
+        "id": "tip2",
+        "iconClass": "fas fa-spell-check",
+        "title": "Check Pronunciations",
+        "description": "If there are tricky names or words, consider providing phonetic spellings or a short audio clip if the platform allows, to help the star get it right."
+      },
+      {
+        "id": "tip3",
+        "iconClass": "fas fa-thumbs-up",
+        "title": "Keep it Positive & Respectful",
+        "description": "Stars are happy to create joyful and uplifting messages. Ensure your request is appropriate and aligns with a positive experience for everyone."
+      },
+      {
+        "id": "tip4",
+        "iconClass": "far fa-clock",
+        "title": "Allow Time",
+        "description": "Celebrities have busy schedules. While they aim to complete requests promptly, check their profile for estimated delivery times and book in advance for time-sensitive occasions."
+      }
+    ]
+  }
+}

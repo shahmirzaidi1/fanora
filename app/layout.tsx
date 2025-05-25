@@ -1,26 +1,54 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css"; // Your global styles
+import Navbar from "@/components/Navbar"; // Ensure this path is correct
+import Footer from "@/components/landing/Footer"; // Ensure this path is correct
+import { LandingPageData } from "@/types/landingPageData"; // Ensure this path is correct
+
+import fsPromises from 'fs/promises';
+import path from 'path';
+
+// Function to fetch data needed for the global layout (Navbar and Footer)
+async function getLayoutData(): Promise<{
+  navData: LandingPageData['landing_nav'] | null;
+  footerData: LandingPageData['landing_footer'] | null;
+}> {
+  const filePath = path.join(process.cwd(), 'public', 'landing_page_data.json');
+  try {
+    const jsonData = await fsPromises.readFile(filePath, 'utf-8');
+    const objectData = JSON.parse(jsonData) as LandingPageData;
+    return {
+      navData: objectData.landing_nav || null,
+      footerData: objectData.landing_footer || null,
+    };
+  } catch (error) {
+    console.error("Could not read layout data (nav/footer):", error);
+    return { navData: null, footerData: null }; // Handle error gracefully
+  }
+}
 
 export const metadata: Metadata = {
-  title: "Fanora - Personalized Video Messages", // Default title
+  title: "Fanora - Personalized Video Messages",
   description: "Get personalized video messages from your favorite Pakistani stars.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { navData, footerData } = await getLayoutData();
+
   return (
     <html lang="en">
       <head>
-        {/* Font Awesome and Google Fonts should be linked here if not in globals.css */}
-        {/* For example: */}
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
       </head>
-      <body className="text-gray-800"> {/* Base body class from original */}
-        {children}
+      <body className="text-gray-800 flex flex-col min-h-screen"> {/* Added flex classes for sticky footer */}
+        {navData && <Navbar data={navData} />}
+        <main className="flex-grow">{children}</main> {/* Added flex-grow to push footer down */}
+        {footerData && <Footer data={footerData} />}
       </body>
     </html>
   );

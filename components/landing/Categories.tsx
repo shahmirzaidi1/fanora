@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { LandingPageData } from '@/types/LandingPageData';
+import { LandingPageData } from '@/types/landingPageData';
 import ScrollAnimated from './ScrollAnimated';
 
 interface CategoriesProps {
