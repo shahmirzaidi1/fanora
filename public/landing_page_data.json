@@ -35,10 +35,11 @@
   "landing_popularCelebrities": {
     "heading": "Popular Celebrities",
     "celebrities": [
-      { "name": "Fawad Khan", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=FK", "alt": "Fawad Khan", "delay": "100" },
+      { "name": "Fawad Khan", "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TBxmA4rEl1bDXr-nw4VQDNSdaZGcmI6Iow&s", "alt": "Fawad Khan", "delay": "100" },
       { "name": "Mahira Khan", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=MK", "alt": "Mahira Khan", "delay": "200" },
       { "name": "Babar Azam", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=BA", "alt": "Babar Azam", "delay": "300" },
       { "name": "Atif Aslam", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=AA", "alt": "Atif Aslam", "delay": "100" },
+      { "name": "Arif Lohar", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=AA", "alt": "Arif Lohar", "delay": "100" },
       { "name": "Saba Qamar", "imgSrc": "https://placehold.co/100x100/4A5563/EBF4FF?text=SQ", "alt": "Saba Qamar", "delay": "200" }
     ]
   },
