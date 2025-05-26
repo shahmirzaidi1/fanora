@@ -8,6 +8,7 @@ interface ScrollAnimatedProps extends HTMLAttributes<HTMLElement> {
   delay?: string | null;
   animationClass?: string;
   threshold?: number;
+  href?: string; // Optional href for anchor tags
   /* href?: string; // Optional href for anchor tags */
   as?: ElementType; // Allows specifying the wrapper element type
 }
