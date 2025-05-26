@@ -11,11 +11,20 @@ const nextConfig: NextConfig = {
         pathname: '/**', // Optional: Allows any path under this hostname.
                          // You could be more specific, e.g., '/:widthx:height/:bgColor?/:textColor?/**'
       },
-      // You can add other remote patterns here if needed
-      // {
-      //   protocol: 'https',
-      //   hostname: 'another-image-provider.com',
-      // },
+      {
+        protocol: 'https',
+        hostname: 'thispersondoesnotexist.com',
+        port: '', // Optional: Defaults to '' (standard ports 80 for http, 443 for https)
+        pathname: '/**', // Optional: Allows any path under this hostname.
+                         // You could be more specific, e.g., '/:widthx:height/:bgColor?/:textColor?/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'ozgrozer.github.io',
+        port: '', // Optional: Defaults to '' (standard ports 80 for http, 443 for https)
+        pathname: '/**', // Optional: Allows any path under this hostname.
+                         // You could be more specific, e.g., '/:widthx:height/:bgColor?/:textColor?/**'
+      },
     ],
   },
 };

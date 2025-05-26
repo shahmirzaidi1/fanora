@@ -36,9 +36,9 @@
       "description": "Beloved TV actress, perfect for heartfelt messages.",
       "price": "PKR 12,000",
       "profileLink": "/profile/ayeza-khan",
-      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001873.jpg",
       "imageAlt": "Ayeza Khan",
-      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "fallbackImageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001873.jpg",
       "delay": null
     },
     {
@@ -48,9 +48,9 @@
       "description": "International star, ideal for grand gestures.",
       "price": "PKR 20,000",
       "profileLink": "/profile/fawad-khan",
-      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001872.jpg",
       "imageAlt": "Fawad Khan",
-      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "fallbackImageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001872.jpg",
       "delay": "100"
     },
     {
@@ -60,9 +60,9 @@
       "description": "Elegant superstar for memorable messages.",
       "price": "PKR 22,000",
       "profileLink": "/profile/mahira-khan",
-      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001871.jpg",
       "imageAlt": "Mahira Khan",
-      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "fallbackImageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001871.jpg",
       "delay": "200"
     },
     {
@@ -72,9 +72,9 @@
       "description": "Legendary voice for truly special song dedications.",
       "price": "PKR 25,000",
       "profileLink": "/profile/atif-aslam",
-      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001870.jpg",
       "imageAlt": "Atif Aslam",
-      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "fallbackImageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001870.jpg",
       "delay": "300"
     },
     {
@@ -84,9 +84,9 @@
       "description": "Bold and talented, for impactful greetings.",
       "price": "PKR 18,000",
       "profileLink": "/profile/saba-qamar",
-      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001869.jpg",
       "imageAlt": "Saba Qamar",
-      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "fallbackImageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001869.jpg",
       "delay": null
     },
     {
@@ -96,9 +96,9 @@
       "description": "Get a shoutout from the cricket superstar!",
       "price": "PKR 18,500",
       "profileLink": "/profile/babar-azam",
-      "imageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001868.jpg",
       "imageAlt": "Babar Azam",
-      "fallbackImageSrc": "https://placehold.co/400x300/4A5568/EBF4FF?text=Star",
+      "fallbackImageSrc": "https://ozgrozer.github.io/100k-faces/0/1/001868.jpg",
       "delay": "100"
     }
   ],

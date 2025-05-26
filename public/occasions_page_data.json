@@ -1,0 +1,124 @@
+{
+  "metaTitle": "Occasions - Fanora",
+  "hero": {
+    "title": "Celebrate Every Occasion",
+    "subtitle": "Find the perfect celebrity message to make any event truly special and memorable.",
+    "backgroundImageText": "Celebrate+Every+Moment"
+  },
+  "occasions": [
+    {
+      "id": "birthday",
+      "link": "/browse?occasion=birthday",
+      "imageSrc": "https://placehold.co/500x300/007BFF/FFFFFF?text=Birthday+Joy",
+      "imageAlt": "Birthday Celebration",
+      "fallbackImageSrc": "https://placehold.co/500x300/007BFF/FFFFFF?text=Birthdays",
+      "iconClass": "fas fa-birthday-cake",
+      "title": "Birthdays",
+      "description": "Make their special day unforgettable with a personalized birthday shoutout from their favorite star.",
+      "linkText": "Find Birthday Stars",
+      "delay": null
+    },
+    {
+      "id": "eid",
+      "link": "/browse?occasion=eid",
+      "imageSrc": "https://placehold.co/500x300/005A9C/FFFFFF?text=Eid+Blessings",
+      "imageAlt": "Eid Celebration",
+      "fallbackImageSrc": "https://placehold.co/500x300/005A9C/FFFFFF?text=Eid+Greetings",
+      "iconClass": "fas fa-moon",
+      "title": "Eid Greetings",
+      "description": "Send heartfelt Eid Mubarak messages to family and friends, delivered by a beloved celebrity.",
+      "linkText": "Find Eid Stars",
+      "delay": "100"
+    },
+    {
+      "id": "anniversary",
+      "link": "/browse?occasion=anniversary",
+      "imageSrc": "https://placehold.co/500x300/003366/FFFFFF?text=Anniversary+Cheers",
+      "imageAlt": "Anniversary Celebration",
+      "fallbackImageSrc": "https://placehold.co/500x300/003366/FFFFFF?text=Anniversaries",
+      "iconClass": "fas fa-heart",
+      "title": "Anniversaries",
+      "description": "Celebrate love, partnerships, and significant milestones with a unique and touching video message.",
+      "linkText": "Find Anniversary Stars",
+      "delay": "200"
+    },
+    {
+      "id": "wedding",
+      "link": "/browse?occasion=wedding",
+      "imageSrc": "https://placehold.co/500x300/004B8D/FFFFFF?text=Wedding+Celebrations",
+      "imageAlt": "Wedding Day",
+      "fallbackImageSrc": "https://placehold.co/500x300/004B8D/FFFFFF?text=Weddings",
+      "iconClass": "fas fa-ring",
+      "title": "Weddings",
+      "description": "Congratulate the happy couple or send best wishes with a star-studded message for their big day.",
+      "linkText": "Find Wedding Stars",
+      "delay": null 
+    },
+    {
+      "id": "motivation",
+      "link": "/browse?occasion=motivation",
+      "imageSrc": "https://placehold.co/500x300/002D5A/FFFFFF?text=Words+of+Encouragement",
+      "imageAlt": "Motivational",
+      "fallbackImageSrc": "https://placehold.co/500x300/002D5A/FFFFFF?text=Motivation",
+      "iconClass": "fas fa-lightbulb",
+      "title": "Pep Talks & Motivation",
+      "description": "Inspire, uplift, or encourage someone with a powerful and personalized message from a respected star.",
+      "linkText": "Find Motivational Stars",
+      "delay": "100"
+    },
+    {
+      "id": "justbecause",
+      "link": "/browse?occasion=justbecause",
+      "imageSrc": "https://placehold.co/500x300/007BFF/EBF4FF?text=Fun+Surprises",
+      "imageAlt": "Just Because",
+      "fallbackImageSrc": "https://placehold.co/500x300/007BFF/EBF4FF?text=Just+Because",
+      "iconClass": "fas fa-smile-wink",
+      "title": "Just Because",
+      "description": "Sometimes, no special reason is needed! Send a fun, surprising video to brighten someone's day.",
+      "linkText": "Find Stars for Fun",
+      "delay": "200"
+    },
+    {
+      "id": "getwell",
+      "link": "/browse?occasion=getwell",
+      "imageSrc": "https://placehold.co/500x300/005A9C/FFFFFF?text=Wishing+You+Well",
+      "imageAlt": "Get Well Soon",
+      "fallbackImageSrc": "https://placehold.co/500x300/005A9C/FFFFFF?text=Get+Well",
+      "iconClass": "fas fa-briefcase-medical",
+      "title": "Get Well Soon",
+      "description": "Send comforting wishes for a speedy recovery and lift their spirits with a thoughtful message.",
+      "linkText": "Find Get Well Stars",
+      "delay": null
+    },
+    {
+      "id": "thankyou",
+      "link": "/browse?occasion=thankyou",
+      "imageSrc": "https://placehold.co/500x300/003366/FFFFFF?text=Heartfelt+Thanks",
+      "imageAlt": "Thank You",
+      "fallbackImageSrc": "https://placehold.co/500x300/003366/FFFFFF?text=Thank+You",
+      "iconClass": "fas fa-hand-holding-heart",
+      "title": "Thank You",
+      "description": "Express your gratitude in a truly unique and memorable way with a personalized thank you video.",
+      "linkText": "Find Thank You Stars",
+      "delay": "100"
+    },
+    {
+      "id": "goodluck",
+      "link": "/browse?occasion=goodluck",
+      "imageSrc": "https://placehold.co/500x300/004B8D/FFFFFF?text=All+The+Best",
+      "imageAlt": "Good Luck",
+      "fallbackImageSrc": "https://placehold.co/500x300/004B8D/FFFFFF?text=Good+Luck",
+      "iconClass": "fas fa-star",
+      "title": "Good Luck",
+      "description": "Wish someone the very best of luck for an exam, new job, or any important life endeavor.",
+      "linkText": "Find Good Luck Stars",
+      "delay": "200"
+    }
+  ],
+  "cta": {
+    "title": "Don't see your occasion?",
+    "description": "Our stars are creative! You can always specify your unique occasion in the request form when booking a star.",
+    "buttonText": "Browse All Stars",
+    "buttonLink": "/browse"
+  }
+}
