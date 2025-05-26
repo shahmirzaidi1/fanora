@@ -9,7 +9,7 @@ import HowItWorksSection from '@/components/landing/HowItWorks'; // Corrected fi
 import Reviews from '@/components/landing/Reviews';
 import ContactCallToAction from '@/components/landing/ContactCallToAction';
 
-import { LandingPageData } from '@/types/landingPageData'; // Corrected casing for LandingPageData
+import { LandingPageData } from '@/types/mainLandingPageData'; // Corrected casing for LandingPageData
 
 // Function to fetch data
 async function getLandingPageData(): Promise<LandingPageData> {

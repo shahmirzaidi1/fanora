@@ -2,7 +2,7 @@
 import React from 'react';
 import ScrollAnimated from '@/components/landing/ScrollAnimated'; // Adjust the import path as needed
 // import Image from 'next/image'; // Using Next.js Image component
-import { LandingPageData } from '@/types/landingPageData';
+import { LandingPageData } from '@/types/mainLandingPageData';
 
 interface FeaturedCelebrityProps {
   data: LandingPageData['landing_featuredCelebrity'];

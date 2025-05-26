@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollAnimated from '@/components/landing/ScrollAnimated'; // Adjust the import path as needed
-import { LandingPageData } from '@/types/landingPageData'; // Adjust the import path as needed
+import { LandingPageData } from '@/types/mainLandingPageData'; // Adjust the import path as needed
 
 interface HeaderProps {
   data: LandingPageData['landing_header'];

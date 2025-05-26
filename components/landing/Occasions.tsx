@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollAnimated from './ScrollAnimated';
 // import Image from 'next/image';
-import { LandingPageData } from '@/types/landingPageData';
+import { LandingPageData } from '@/types/mainLandingPageData';
 
 interface OccasionsProps {
   data: LandingPageData['landing_occasions'];

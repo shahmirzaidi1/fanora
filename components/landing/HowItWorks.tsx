@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollAnimated from './ScrollAnimated'; // Adjust the import path as needed
 import Link from 'next/link';
-import { LandingPageData } from '@/types/landingPageData'; // Adjust the import path as needed
+import { LandingPageData } from '@/types/mainLandingPageData'; // Adjust the import path as needed
 
 interface HowItWorksProps {
   data: LandingPageData['landing_howItWorks'];
