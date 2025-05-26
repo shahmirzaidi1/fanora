@@ -1,0 +1,67 @@
+{
+  "metaTitle": "Auctions - Fanora",
+  "hero": {
+    "title": "Fanora Auctions",
+    "subtitle": "Bid on exclusive experiences and one-of-a-kind items from your favorite stars!",
+    "backgroundImageText": "Exclusive+Auctions"
+  },
+  "introduction": {
+    "text": "Welcome to Fanora Auctions! This is your chance to win unique interactions and memorabilia. Keep an eye on the countdown and place your bids. Highest bidder wins!",
+    "learnMoreLink": "/faq#auctions",
+    "learnMoreText": "Learn more about auction rules."
+  },
+  "auctionItems": [
+    {
+      "id": "hania-video-chat",
+      "title": "15-Min Live Video Chat with Hania Aamir",
+      "description": "An exclusive opportunity for a one-on-one video conversation with the vibrant Hania Aamir. Ask your questions and chat live!",
+      "imageSrc": "https://placehold.co/600x400/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Live Video Chat with Celebrity",
+      "fallbackImageSrc": "https://placehold.co/600x400/4A5568/EBF4FF?text=Star+Experience",
+      "currentBidLabel": "Current Bid",
+      "currentBidAmount": "PKR 25,500",
+      "bidsCountLabel": "Bids",
+      "bidsCount": 18,
+      "countdownText": "1d 4h 32m left",
+      "bidInputPlaceholder": "Your Bid (PKR)",
+      "placeBidButtonText": "Place Bid",
+      "delay": null
+    },
+    {
+      "id": "babar-signed-bat",
+      "title": "Signed Cricket Bat by Babar Azam",
+      "description": "Own a piece of cricket history! A full-sized cricket bat personally signed by the captain, Babar Azam.",
+      "imageSrc": "https://placehold.co/600x400/CBD5E0/4A5563?text=Signed+Memorabilia",
+      "imageAlt": "Signed Cricket Bat",
+      "fallbackImageSrc": "https://placehold.co/600x400/CBD5E0/4A5563?text=Memorabilia",
+      "currentBidLabel": "Current Bid",
+      "currentBidAmount": "PKR 40,000",
+      "bidsCountLabel": "Bids",
+      "bidsCount": 32,
+      "countdownText": "3d 10h 15m left",
+      "bidInputPlaceholder": "Your Bid (PKR)",
+      "placeBidButtonText": "Place Bid",
+      "delay": "100"
+    },
+    {
+      "id": "atif-personalized-song",
+      "title": "Personalized Song by Atif Aslam",
+      "description": "A once-in-a-lifetime chance! Atif Aslam will compose and record a 30-second original song personalized for you or a loved one.",
+      "imageSrc": "https://placehold.co/600x400/4A5568/EBF4FF?text=%EF%80%87&font=fontawesome",
+      "imageAlt": "Personalized Song",
+      "fallbackImageSrc": "https://placehold.co/600x400/4A5568/EBF4FF?text=Star+Performance",
+      "currentBidLabel": "Current Bid",
+      "currentBidAmount": "PKR 75,000",
+      "bidsCountLabel": "Bids",
+      "bidsCount": 41,
+      "countdownText": "5d 2h 5m left",
+      "bidInputPlaceholder": "Your Bid (PKR)",
+      "placeBidButtonText": "Place Bid",
+      "delay": "200"
+    }
+  ],
+  "cta": {
+    "buttonText": "Explore More Stars & Items",
+    "buttonLink": "/browse"
+  }
+}

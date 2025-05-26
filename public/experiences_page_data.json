@@ -1,0 +1,88 @@
+{
+  "metaTitle": "Unique Experiences - Fanora",
+  "hero": {
+    "title": "Exclusive Star Experiences",
+    "subtitle": "Go beyond video messages. Engage with your favorite stars in unique and interactive ways.",
+    "backgroundImageText": "Unforgettable+Experiences"
+  },
+  "experiences": [
+    {
+      "id": "live-qa",
+      "imageSrc": "https://placehold.co/500x300/007BFF/FFFFFF?text=Live+Q%26A+Session",
+      "imageAlt": "Live Q&A Session",
+      "fallbackImageSrc": "https://placehold.co/500x300/007BFF/FFFFFF?text=Live+Q%26A",
+      "iconClass": "fas fa-comments",
+      "title": "Live Q&A Session",
+      "description": "Join an exclusive group Q&A session with a star. Ask your burning questions and hear their insights live.",
+      "link": "/browse?experience=live-qa",
+      "linkText": "Explore Q&A Sessions",
+      "delay": null
+    },
+    {
+      "id": "meet-greet",
+      "imageSrc": "https://placehold.co/500x300/005A9C/FFFFFF?text=Virtual+Meet+%26+Greet",
+      "imageAlt": "Virtual Meet & Greet",
+      "fallbackImageSrc": "https://placehold.co/500x300/005A9C/FFFFFF?text=Meet+%26+Greet",
+      "iconClass": "fas fa-handshake",
+      "title": "Virtual Meet & Greet",
+      "description": "A private, one-on-one video call with your chosen celebrity. A truly personal and memorable interaction.",
+      "link": "/browse?experience=meet-greet",
+      "linkText": "Book a Meet & Greet",
+      "delay": "100"
+    },
+    {
+      "id": "gaming-session",
+      "imageSrc": "https://placehold.co/500x300/003366/FFFFFF?text=Online+Gaming+Session",
+      "imageAlt": "Online Gaming Session",
+      "fallbackImageSrc": "https://placehold.co/500x300/003366/FFFFFF?text=Gaming+Session",
+      "iconClass": "fas fa-gamepad",
+      "title": "Online Gaming Session",
+      "description": "Challenge your favorite gamer celebrity or influencer to an online match or play alongside them.",
+      "link": "/browse?experience=gaming",
+      "linkText": "Join a Gaming Session",
+      "delay": "200"
+    },
+    {
+      "id": "skill-class",
+      "imageSrc": "https://placehold.co/500x300/004B8D/FFFFFF?text=Virtual+Cooking+Class",
+      "imageAlt": "Virtual Cooking Class",
+      "fallbackImageSrc": "https://placehold.co/500x300/004B8D/FFFFFF?text=Cooking+Class",
+      "iconClass": "fas fa-utensils",
+      "title": "Virtual Cooking/Skill Class",
+      "description": "Learn a new recipe or skill directly from a celebrity chef or expert in a live virtual class.",
+      "link": "/browse?experience=skill-class",
+      "linkText": "Attend a Class",
+      "delay": null
+    },
+    {
+      "id": "bts-access",
+      "imageSrc": "https://placehold.co/500x300/002D5A/FFFFFF?text=Behind-the-Scenes+Access",
+      "imageAlt": "Behind-the-Scenes Access",
+      "fallbackImageSrc": "https://placehold.co/500x300/002D5A/FFFFFF?text=BTS+Access",
+      "iconClass": "fas fa-film",
+      "title": "Behind-the-Scenes Access",
+      "description": "Get an exclusive peek into a day in the life of a star, or a virtual tour of their set/studio.",
+      "link": "/browse?experience=bts",
+      "linkText": "Get BTS Access",
+      "delay": "100"
+    },
+    {
+      "id": "custom-experience",
+      "imageSrc": "https://placehold.co/500x300/007BFF/EBF4FF?text=Custom+Experience",
+      "imageAlt": "Custom Experience",
+      "fallbackImageSrc": "https://placehold.co/500x300/007BFF/EBF4FF?text=Custom+Request",
+      "iconClass": "fas fa-magic",
+      "title": "Custom Experience Request",
+      "description": "Have a unique idea for an interaction? Propose a custom experience (subject to star approval and pricing).",
+      "link": "/contact?subject=CustomExperience",
+      "linkText": "Propose an Experience",
+      "delay": "200"
+    }
+  ],
+  "cta": {
+    "title": "Looking for Something Else?",
+    "description": "Our stars are always coming up with new ways to connect. Check back often or browse by star to see what's available!",
+    "buttonText": "Browse All Stars",
+    "buttonLink": "/browse"
+  }
+}
