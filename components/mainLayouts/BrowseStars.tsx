@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // components/mainLayouts/BrowseStars.tsx
 "use client"; // Due to filters and pagination state management that would live here
 
@@ -29,7 +30,7 @@ export default function BrowseStarsLayout({ initialData }: BrowseStarsLayoutProp
     console.log("Applying filters:", filters);
     // This is where you'd filter initialData.stars based on the filter values
     // For demonstration, let's just log and reset to all stars or implement a simple filter
-    let newFilteredStars = initialData.stars.filter(star => {
+    const newFilteredStars = initialData.stars.filter(star => {
         const nameMatch = filters.searchText ? star.name.toLowerCase().includes(filters.searchText.toLowerCase()) : true;
         // Add category and price filtering logic here based on your data structure
         return nameMatch;

@@ -25,6 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: data.metaTitle || "Unique Experiences - Fanora",
     };
   } catch (error) {
+    console.error("Error generating metadata for 'Experiences' page:", error);
     return {
       title: "Unique Experiences - Fanora", // Fallback title
     };
