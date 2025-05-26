@@ -5,26 +5,16 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '', // Optional: Defaults to '' (standard ports 80 for http, 443 for https)
-        pathname: '/**', // Optional: Allows any path under this hostname.
-                         // You could be more specific, e.g., '/:widthx:height/:bgColor?/:textColor?/**'
+        protocol: 'https', // You can also make this more generic if needed, e.g., by omitting it or using a pattern
+        hostname: '**', // This allows any hostname
+        // port: '', // Optional: Still defaults to standard ports. Can be omitted.
+        // pathname: '/**', // Optional: Still allows any path. Can be omitted if '**' for hostname is used.
       },
       {
-        protocol: 'https',
-        hostname: 'thispersondoesnotexist.com',
-        port: '', // Optional: Defaults to '' (standard ports 80 for http, 443 for https)
-        pathname: '/**', // Optional: Allows any path under this hostname.
-                         // You could be more specific, e.g., '/:widthx:height/:bgColor?/:textColor?/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'ozgrozer.github.io',
-        port: '', // Optional: Defaults to '' (standard ports 80 for http, 443 for https)
-        pathname: '/**', // Optional: Allows any path under this hostname.
-                         // You could be more specific, e.g., '/:widthx:height/:bgColor?/:textColor?/**'
-      },
+        protocol: 'http', // It's good practice to also allow http if you truly want to allow *any* host,
+                          // as not all image sources will be https.
+        hostname: '**',
+      }
     ],
   },
 };
