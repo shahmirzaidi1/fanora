@@ -37,8 +37,6 @@ body {
     background-image: linear-gradient(to bottom, rgba(56, 76, 96, 0.75), rgba(30, 44, 59, 0.9)), url('https://voguevocal.com/wp-content/uploads/2024/08/BlogBanner-3-1200x720.jpg');
     background-size: cover;
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .logo-accent {
