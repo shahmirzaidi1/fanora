@@ -4,11 +4,11 @@
     "logoText": ["Fan", "ora"],
     "links": [
       {"href": "/", "text": "Home", "active": true},
-      {"href": "/browse", "text": "Browse Stars"},
-      {"href": "/how-it-works", "text": "How It Works"},
-      {"href": "/occasions", "text": "Occasions"},
-      {"href": "/auctions", "text": "Auctions"},
-      {"href": "/experiences", "text": "Experiences"}
+      {"href": "/welcome/browse", "text": "Browse Stars"},
+      {"href": "/welcome/howItWorks", "text": "How It Works"},
+      {"href": "/welcome/occasions", "text": "Occasions"},
+      {"href": "/welcome/auctions", "text": "Auctions"},
+      {"href": "/welcome/experiences", "text": "Experiences"}
     ],
     "searchIconClass": "fas fa-search",
     "signUpButtonText": "Sign Up",
@@ -105,11 +105,11 @@
       {
         "title": "For Fans",
         "links": [
-          { "name": "Browse Stars", "href": "/browse" },
-          { "name": "How It Works", "href": "/how-it-works" },
-          { "name": "Occasions", "href": "/occasions" },
-          { "name": "Auctions", "href": "/auctions" },
-          { "name": "Experiences", "href": "/experiences" },
+          { "name": "Browse Stars", "href": "/welcome/browse" },
+          { "name": "How It Works", "href": "/welcome/howItWorks" },
+          { "name": "Occasions", "href": "/welcome/occasions" },
+          { "name": "Auctions", "href": "/welcome/auctions" },
+          { "name": "Experiences", "href": "/welcome/experiences" },
           { "name": "FAQ", "href": "/faq" }
         ]
       },
