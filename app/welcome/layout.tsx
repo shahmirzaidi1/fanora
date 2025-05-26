@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "../globals.css"; // Your global styles
 import Navbar from "@/components/Navbar"; // Ensure this path is correct
 import Footer from "@/components/landing/Footer"; // Ensure this path is correct
-import { LandingPageData } from "@/types/landingPageData"; // Ensure this path is correct
+import { LandingPageData } from "../../types/landingPageData"; // Ensure this path is correct
 
 import fsPromises from 'fs/promises';
 import path from 'path';
