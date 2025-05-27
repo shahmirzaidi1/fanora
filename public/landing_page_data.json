@@ -45,21 +45,21 @@
   "landing_occasions": {
     "heading": "Occasions",
     "items": [
-      { "name": "Birthdays", "imgSrc": "https://placehold.co/300x200/007BFF/FFFFFF?text=Birthdays", "link": "/occasions#birthday", "delay": null },
-      { "name": "Eid Greetings", "imgSrc": "https://placehold.co/300x200/005A9C/FFFFFF?text=Eid", "link": "/occasions#eid", "delay": "100" },
-      { "name": "Anniversaries", "imgSrc": "https://placehold.co/300x200/003366/FFFFFF?text=Anniversary", "link": "/occasions#anniversary", "delay": "200" },
-      { "name": "Weddings", "imgSrc": "https://placehold.co/300x200/004B8D/FFFFFF?text=Weddings", "link": "/occasions#wedding", "delay": "300" },
-      { "name": "Motivation", "imgSrc": "https://placehold.co/300x200/002D5A/FFFFFF?text=Motivation", "link": "/occasions#motivation", "delay": "100" }
+      { "name": "Birthdays", "imgSrc": "https://govalleykids.com/wp-content/uploads/2020/04/Birthdays.jpg", "link": "/occasions#birthday", "delay": null },
+      { "name": "Eid Greetings", "imgSrc": "https://www.soundvision.com/sites/default/files/field/image/adobestock_350282291.jpeg", "link": "/occasions#eid", "delay": "100" },
+      { "name": "Anniversaries", "imgSrc": "https://www.buckner.org/images/r/happy-anniversary-signage/c960x540g0-205-5615-3363/happy-anniversary-signage.jpg", "link": "/occasions#anniversary", "delay": "200" },
+      { "name": "Weddings", "imgSrc": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_640,q_85,w_640,x_1168,y_652/v1/clients/poconos/Weddings_Outdoor_Ceremony_Summit_House_5_PoconoMtns_49086f96-0925-4573-a13b-b764d705f4a7.jpg", "link": "/occasions#wedding", "delay": "300" },
+      { "name": "Motivation", "imgSrc": "https://ied.eu/wp-content/uploads/2018/06/motivation.png", "link": "/occasions#motivation", "delay": "100" }
     ]
   },
   "landing_categories": {
     "heading": "Categories",
     "items": [
-      { "name": "Actors", "imgSrc": "https://placehold.co/300x200/003366/FFFFFF?text=Actors", "link": "/browse?category=actors", "delay": null },
-      { "name": "Actresses", "imgSrc": "https://placehold.co/300x200/005A9C/FFFFFF?text=Actresses", "link": "/browse?category=actresses", "delay": "100" },
-      { "name": "Singers", "imgSrc": "https://placehold.co/300x200/007BFF/FFFFFF?text=Singers", "link": "/browse?category=singers", "delay": "200" },
-      { "name": "Cricketers", "imgSrc": "https://placehold.co/300x200/004B8D/FFFFFF?text=Cricketers", "link": "/browse?category=cricketers", "delay": "300" },
-      { "name": "Influencers", "imgSrc": "https://placehold.co/300x200/002D5A/FFFFFF?text=Influencers", "link": "/browse?category=influencers", "delay": "100" }
+      { "name": "Actors", "imgSrc": "https://sm.mashable.com/t/mashable_me/photo/default/untitled-design-3_7mrc.1248.jpg", "link": "/browse?category=actors", "delay": null },
+      { "name": "Actresses", "imgSrc": "https://www.thecelebrays.com/wp-content/uploads/2024/03/Ayeza-Khan-2-1.jpg", "link": "/browse?category=actresses", "delay": "100" },
+      { "name": "Singers", "imgSrc": "https://arynews.tv/wp-content/uploads/2025/02/ezgif.com-resize-84.webp", "link": "/browse?category=singers", "delay": "200" },
+      { "name": "Cricketers", "imgSrc": "https://www.geosuper.tv/assets/uploads/updates/2021-12-22/12454_8540168_updates.gif", "link": "/browse?category=cricketers", "delay": "300" },
+      { "name": "Influencers", "imgSrc": "https://i.dawn.com/large/2021/07/6104e14bf2ca8.png", "link": "/browse?category=influencers", "delay": "100" }
     ],
     "seeMoreLinkText": "See More Categories",
     "seeMoreLink": "/browse",
