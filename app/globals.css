@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -95,7 +95,7 @@ body {
 }
 
 .featured-celebrity-bg {
-    background-color: #b4cbff; 
+    background-color: hsl(222, 100%, 85%); 
     border-radius: 0.75rem; 
 }
 
@@ -236,9 +236,9 @@ body {
 .text-brand-secondary {
     color: #005A9C; 
 }
-.section-title { /* Original had 2.5rem margin, this block has 1rem. Keeping 2.5rem from original for main page, this could be for subpages */
-    /* margin-bottom: 1rem; */ /* If specific use cases need this, create a variant class */
-}
+/* .section-title {  Original had 2.5rem margin, this block has 1rem. Keeping 2.5rem from original for main page, this could be for subpages 
+    margin-bottom: 1rem;  If specific use cases need this, create a variant class 
+} */
 .section-subtitle {
     font-size: 1.125rem; /* text-lg */
     color: #495057; /* gray-700 */
@@ -286,11 +286,11 @@ body {
     background-size: cover;
     background-position: center;
 }
-.btn-secondary { /* This definition has different padding. Original: 0.75rem 2rem. This one: 0.6rem 1.5rem. */
-    /* For global, decide one or make specific classes. Sticking with original for now. */
-    /* padding: 0.6rem 1.5rem; */ 
-    /* font-size: 0.875rem; */ /* Original .btn-secondary does not have font-size, .btn-primary does. */
-}
+/* .btn-secondary {  This definition had different padding. Original: 0.75rem 2rem. This one: 0.6rem 1.5rem. 
+    For global, decide one or make specific classes. Sticking with original for now. 
+    padding: 0.6rem 1.5rem;  
+    font-size: 0.875rem;  Original .btn-secondary does not have font-size, .btn-primary does. 
+} */
 .star-card {
     background-color: white;
     border-radius: 0.75rem; /* rounded-xl */
@@ -394,7 +394,7 @@ body {
 .experience-card {
     background-color: white;
     border-radius: 0.75rem; /* rounded-xl */
-    box-schadow: 0 6px 12px rgba(0,31,63,0.08);
+    box-shadow: 0 6px 12px rgba(0,31,63,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     display: flex;
