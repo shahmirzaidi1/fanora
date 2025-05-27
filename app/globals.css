@@ -95,7 +95,7 @@ body {
 }
 
 .featured-celebrity-bg {
-    background-color: rgb(191, 222, 255); 
+    background-color: #dde8ff; 
     border-radius: 0.75rem; 
 }
 
@@ -151,7 +151,7 @@ body {
 }
 
 .review-card {
-    background-color: white;
+    background-color: #dde8ff;
     border: 1px solid #E2E8F0;
     border-radius: 0.5rem;
     padding: 1.5rem;
@@ -163,7 +163,7 @@ body {
 }
 
 .footer-bg {
-    background-color: #001F3F; 
+    background-color:  #dde8ff; 
     color: #A0AEC0; 
 }
 
