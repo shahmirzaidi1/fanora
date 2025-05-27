@@ -28,7 +28,7 @@ body {
 /* === Base Styles from Original HTML === */
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: #F8F9FA; 
+    background-color: #303030; 
     color: #212529; 
     overflow-x: hidden; 
 }
@@ -95,7 +95,7 @@ body {
 }
 
 .featured-celebrity-bg {
-    background-color: #2373c4; 
+    background-color: #c7c8c8; 
     border-radius: 0.75rem; 
 }
 
