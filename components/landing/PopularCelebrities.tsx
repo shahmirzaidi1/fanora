@@ -9,12 +9,12 @@ interface PopularCelebritiesProps {
 
 const PopularCelebrities: React.FC<PopularCelebritiesProps> = ({ data }) => {
   return (
-    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white">
+    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="section-title text-center">{data.heading}</h2>
+        <h2 className="text-[2rem] font-extrabold text-white mb-10 text-center">{data.heading}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 text-center">
           {data.celebrities.map((celeb) => (
-            <ScrollAnimated key={celeb.name} className="flex flex-col items-center" delay={celeb.delay}>
+            <ScrollAnimated key={celeb.name} className="flex flex-col items-center " delay={celeb.delay}>
               <Image 
                 src={celeb.imgSrc} 
                 alt={celeb.alt} 
@@ -22,7 +22,7 @@ const PopularCelebrities: React.FC<PopularCelebritiesProps> = ({ data }) => {
                 width={100} 
                 height={100}
               />
-              <h3 className="font-semibold text-gray-800 text-sm">{celeb.name}</h3>
+              <h3 className="font-semibold text-gray-800 text-white text-sm">{celeb.name}</h3>
             </ScrollAnimated>
           ))}
         </div>

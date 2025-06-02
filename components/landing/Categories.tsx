@@ -9,9 +9,9 @@ interface CategoriesProps {
 
 const Categories: React.FC<CategoriesProps> = ({ data }) => {
   return (
-    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white">
+    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="section-title text-center">{data.heading}</h2>
+        <h2 className="text-[2rem] font-extrabold text-white mb-10 text-center">{data.heading}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {data.items.map((category) => (
             <ScrollAnimated as="a" className="grid-item-card" key={category.name} delay={category.delay}>
@@ -23,7 +23,7 @@ const Categories: React.FC<CategoriesProps> = ({ data }) => {
           ))}
         </div>
         <ScrollAnimated className="text-center mt-10">
-          <Link href={data.seeMoreLink} className="text-brand hover:text-brand-secondary font-semibold">
+          <Link href={data.seeMoreLink} className="text-custom_primary hover:font-black hover:scale-150 transition-all duration-300 font-semibold">
             {data.seeMoreLinkText} <i className={`${data.seeMoreIconClass} ml-1`}></i>
           </Link>
         </ScrollAnimated>

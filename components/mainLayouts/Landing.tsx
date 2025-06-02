@@ -31,14 +31,15 @@ export default async function Landing() {
   return (
     <>
       <Header data={data.landing_header} />
-      <FeaturedCelebrity data={data.landing_featuredCelebrity} />
-      <PopularCelebrities data={data.landing_popularCelebrities} />
-      <Occasions data={data.landing_occasions} />
-      <Categories data={data.landing_categories} />
-      <HowItWorksSection data={data.landing_howItWorks} />
-      <Reviews data={data.landing_reviews} />
-      <ContactCallToAction data={data.landing_contactCTA} />
-      
+      <div className="bg-black">
+        <FeaturedCelebrity data={data.landing_featuredCelebrity} />
+        <PopularCelebrities data={data.landing_popularCelebrities} />
+        <Occasions data={data.landing_occasions} />
+        <Categories data={data.landing_categories} />
+        <HowItWorksSection data={data.landing_howItWorks} />
+        <Reviews data={data.landing_reviews} />
+        <ContactCallToAction data={data.landing_contactCTA} />
+      </div>
     </>
   );
 }

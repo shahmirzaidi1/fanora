@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollAnimated from './ScrollAnimated'; // Adjust the import path as needed
-import Image from 'next/image';
+// import Image from 'next/image';
 import { LandingPageData } from '@/types/mainLandingPageData';
 
 interface ReviewsProps {
@@ -27,26 +27,26 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
 
 const Reviews: React.FC<ReviewsProps> = ({ data }) => {
   return (
-    <ScrollAnimated as="section" className="py-12 md:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white/10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <h2 className="section-title text-center">{data.heading}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.items.map((review) => (
             <ScrollAnimated className="review-card" key={review.user} delay={review.delay}>
               <div className="flex items-center mb-3">
-                <Image
+                {/* <Image
                   src={`https://placehold.co/40x40/${review.avatarColor}/FFFFFF?text=${review.avatarText}`}
                   alt={`User ${review.avatarText}`}
                   className="w-10 h-10 rounded-full mr-3"
                   width={40}
                   height={40}
-                />
+                /> */}
                 <div>
-                  <h4 className="font-semibold text-gray-800">{review.user}</h4>
+                  <h4 className="font-semibold text-white">{review.user}</h4>
                   <StarRating rating={review.stars} />
                 </div>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">{review.text}</p>
+              <p className="text-white text-sm leading-relaxed">{review.text}</p>
             </ScrollAnimated>
           ))}
         </div>
