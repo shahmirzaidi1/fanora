@@ -9,7 +9,7 @@ interface CategoriesProps {
 
 const Categories: React.FC<CategoriesProps> = ({ data }) => {
   return (
-    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white">
+    <ScrollAnimated as="section" className="py-12 md:py-16 bg-white/80">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-title text-center">{data.heading}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">

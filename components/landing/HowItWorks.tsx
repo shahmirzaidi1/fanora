@@ -9,7 +9,7 @@ interface HowItWorksProps {
 
 const HowItWorksSection: React.FC<HowItWorksProps> = ({ data }) => {
   return (
-    <ScrollAnimated as="section" className="py-16 lg:py-20 bg-blue-50">
+    <ScrollAnimated as="section" className="py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">{data.heading}</h2>
         <p className="text-center text-lg text-gray-600 mb-12 max-w-2xl mx-auto">

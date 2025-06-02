@@ -54,10 +54,10 @@ export default function RootLayout({ // No longer async as data fetching is remo
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
       </head>
       <body className={`${majorMonoDisplay.className} text-gray-800 flex bg-white flex-col min-h-screen`}> {/* Sticky footer classes can remain if you plan to add footers per page */}
-      {/* {navData && <Navbar data={navData} />} // REMOVED */}
-      <main className="flex-grow bg-white">{children}</main>
-      {/* {footerData && <Footer data={footerData} />} // REMOVED */}
-    </body>
+        {/* {navData && <Navbar data={navData} />} // REMOVED */}
+        <main className="flex-grow bg-white">{children}</main>
+        {/* {footerData && <Footer data={footerData} />} // REMOVED */}
+      </body>
     </html >
   );
 }

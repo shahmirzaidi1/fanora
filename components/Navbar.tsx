@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link'; // Using Next.js Link for internal navigation
 import { LandingPageData } from '@/types/mainLandingPageData'; // Adjust path as needed
+import Logo from './misc/logo';
 
 interface NavbarProps {
   data: LandingPageData['landing_nav'];
@@ -37,14 +38,11 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className=" p-5 backdrop-blur-lg h-16 bg-white/50 dark:bg-secondary/60 drop-shadow-md flex items-center justify-between flex-row shadow-sm sticky top-0 z-50">
+    <nav className=" p-5 backdrop-blur-lg h-16 bg-white/85 dark:bg-secondary/60 drop-shadow-md flex items-center justify-between flex-row shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-extrabold">
-              <span className="text-gray-800">{data.logoText[0]}</span>
-              <span className="logo-accent">{data.logoText[1]}</span>
-            </Link>
+            <Logo />
           </div>
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {data.links.map((link) => (
