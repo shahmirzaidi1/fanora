@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ data }) => {
   return (
-    <header className="relative text-white pt-20 pb-24 md:pt-28 md:pb-32">
+    <header className="relative text-white pt-20 pb-24 md:pt-28 md:pb-32 flex flex-col items-center justify-center text-center">
       <div className="absolute inset-0">
         <Image
           src="/landing.jpg"
