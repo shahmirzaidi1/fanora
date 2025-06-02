@@ -1,6 +1,13 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css"; // Your global styles
+import { IBM_Plex_Sans } from 'next/font/google';
+
+const majorMonoDisplay = IBM_Plex_Sans({
+  weight: ['100', '200', '300', '400', '500', '600', '700'], // Include all font weights
+  subsets: ['latin'],
+  display: 'swap',
+});
 // import Navbar from "@/components/Navbar"; // REMOVED
 // import Footer from "@/components/landing/Footer"; // REMOVED
 // import { LandingPageData } from "@/types/landingPageData"; // REMOVED (if only used for nav/footer)
@@ -43,14 +50,14 @@ export default function RootLayout({ // No longer async as data fetching is remo
     <html lang="en">
       <head>
         {/* These are still useful globally */}
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+        {/* <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" /> */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
       </head>
-      <body className="text-gray-800 flex flex-col min-h-screen"> {/* Sticky footer classes can remain if you plan to add footers per page */}
-        {/* {navData && <Navbar data={navData} />} // REMOVED */}
-        <main className="flex-grow">{children}</main>
-        {/* {footerData && <Footer data={footerData} />} // REMOVED */}
-      </body>
-    </html>
+      <body className={`${majorMonoDisplay.className} text-gray-800 flex bg-white flex-col min-h-screen`}> {/* Sticky footer classes can remain if you plan to add footers per page */}
+      {/* {navData && <Navbar data={navData} />} // REMOVED */}
+      <main className="flex-grow bg-white">{children}</main>
+      {/* {footerData && <Footer data={footerData} />} // REMOVED */}
+    </body>
+    </html >
   );
 }

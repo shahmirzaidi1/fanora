@@ -83,6 +83,7 @@ export interface LandingPageData {
   };
   landing_header: {
     title: string;
+    subtext: string;
   };
   landing_featuredCelebrity: FeaturedCelebrityData;
   landing_popularCelebrities: {
