@@ -46,10 +46,10 @@ const Logo: React.FC<LogoProps> = ({
     return (
         <Link href={href} passHref>
             <span
-                className={`${majorMonoDisplay.className} ${className} transition-opacity hover:opacity-80`}
+                className={`${majorMonoDisplay.className} ${className} transition-opacity hover:opacity-80 text-[#0062ff]`} // Use the Lobster font class and apply a transition for hover effect
                 style={{
                     fontSize: size,
-                    color: "#0c5eda", // Use the dynamically determined color
+                    /* color: "#0c5eda", */ // Use the dynamically determined color
                     lineHeight: 1,
                     textDecoration: 'none',
                 }}

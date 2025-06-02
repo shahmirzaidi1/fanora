@@ -105,7 +105,7 @@ body {
     font-size: 2rem;
     font-weight: 800;
     /* Extra bold for Nunito titles */
-    color: #001A33;
+    color: #ffffff;
     margin-bottom: 2.5rem;
 }
 
@@ -166,8 +166,8 @@ body {
 }
 
 .review-card {
-    background-color: #dde8ff;
-    border: 1px solid #E2E8F0;
+    background-color: #000;
+    border: 1px solid #000;
     border-radius: 0.5rem;
     padding: 1.5rem;
     transition: box-shadow 0.3s ease;
@@ -178,7 +178,7 @@ body {
 }
 
 .footer-bg {
-    background-color: #dde8ff;
+    background-color: #1c1c1c;
     color: #A0AEC0;
 }
 
@@ -187,21 +187,21 @@ body {
 }
 
 .how-it-works-card-ui {
-    border: 1px solid #E2E8F0;
+    border: 1px solid #000000;
     border-radius: 0.75rem;
-    background-color: white;
+    background-color: rgb(28, 28, 28);
     padding: 2rem;
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .how-it-works-card-ui:hover {
-    box-shadow: 0 10px 20px rgba(0, 31, 63, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
 }
 
 .how-it-works-icon-bg-ui {
-    background-color: #D6EAF8;
+   /*  background-color: #aab0b4; */
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -259,11 +259,11 @@ body {
 /* .logo-accent, .nav-link, .nav-link:hover, .nav-link-active, .btn-primary, .btn-primary:hover, .btn-secondary, .btn-secondary:hover, .footer-bg, .footer-link:hover are already defined. */
 /* Minor adjustments or new classes from this block: */
 .text-brand {
-    color: #003366;
+    color: #D60C51;
 }
 
 .text-brand-secondary {
-    color: #005A9C;
+    color: #D60C51;
 }
 
 /* .section-title {  Original had 2.5rem margin, this block has 1rem. Keeping 2.5rem from original for main page, this could be for subpages 

@@ -31,7 +31,7 @@ export default async function Landing() {
   return (
     <>
       <Header data={data.landing_header} />
-      <div className="bg-custom_primary">
+      <div className="bg-black">
         <FeaturedCelebrity data={data.landing_featuredCelebrity} />
         <PopularCelebrities data={data.landing_popularCelebrities} />
         <Occasions data={data.landing_occasions} />
@@ -40,7 +40,6 @@ export default async function Landing() {
         <Reviews data={data.landing_reviews} />
         <ContactCallToAction data={data.landing_contactCTA} />
       </div>
-
     </>
   );
 }
