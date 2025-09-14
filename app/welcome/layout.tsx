@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "../globals.css"; // Your global styles
 import Navbar from "@/components/Navbar"; // Ensure this path is correct
 import Footer from "@/components/landing/Footer"; // Ensure this path is correct
-import ProtectedRoute from "@/components/auth/ProtectedRoute";
+// import ProtectedRoute from "@/components/auth/ProtectedRoute"; // Removed - landing page should be public
 import { LandingPageData } from "@/types/mainLandingPageData"; // Ensure this path is correct
 
 import fsPromises from 'fs/promises';
@@ -41,12 +41,10 @@ export default async function RootLayout({
   const { navData, footerData } = await getLayoutData();
 
   return (
-    <ProtectedRoute>
-      <div className="text-gray-800 flex flex-col min-h-screen"> {/* Added flex classes for sticky footer */}
-        {navData && <Navbar data={navData} />}
-        {children}
-        {footerData && <Footer data={footerData} />}
-      </div>
-    </ProtectedRoute>
+    <div className="text-gray-800 flex flex-col min-h-screen"> {/* Added flex classes for sticky footer */}
+      {navData && <Navbar data={navData} />}
+      {children}
+      {footerData && <Footer data={footerData} />}
+    </div>
   );
 }
