@@ -1,8 +1,12 @@
 import { createClient, Session } from '@supabase/supabase-js'
 
-// Environment variables with fallback for build time
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://sqadlozwmsmgweivrymx.supabase.co'
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNxYWRsb3p3bXNtZ3dlaXZyeW14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc4MDQzNTksImV4cCI6MjA3MzM4MDM1OX0.tBpDSozHh22NNeKkI2dzVylpFf3ZJF3XvaUX5QIc-B0'
+// Environment variables - required for production
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error('Missing Supabase environment variables')
+}
 
 // Create Supabase client with production optimizations
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
