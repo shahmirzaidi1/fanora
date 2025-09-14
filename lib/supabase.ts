@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, Session } from '@supabase/supabase-js'
 
 // Environment variables with fallback for build time
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://sqadlozwmsmgweivrymx.supabase.co'
@@ -63,7 +63,7 @@ export const auth = {
   },
 
   // Listen to auth state changes
-  onAuthStateChange: (callback: (event: string, session: any) => void) => {
+  onAuthStateChange: (callback: (event: string, session: Session | null) => void) => {
     return supabase.auth.onAuthStateChange(callback)
   }
 }
