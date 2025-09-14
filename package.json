@@ -11,8 +11,7 @@
     "type-check": "tsc --noEmit",
     "build:analyze": "ANALYZE=true npm run build",
     "preview": "next build && next start",
-    "clean": "rm -rf .next out",
-    "postbuild": "next-sitemap"
+    "clean": "rm -rf .next out"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
