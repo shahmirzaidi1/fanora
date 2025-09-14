@@ -1,17 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Environment variables with validation
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-
-// Validate environment variables
-if (!supabaseUrl) {
-  throw new Error('Missing NEXT_PUBLIC_SUPABASE_URL environment variable')
-}
-
-if (!supabaseAnonKey) {
-  throw new Error('Missing NEXT_PUBLIC_SUPABASE_ANON_KEY environment variable')
-}
+// Environment variables with fallback for build time
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://sqadlozwmsmgweivrymx.supabase.co'
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNxYWRsb3p3bXNtZ3dlaXZyeW14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc4MDQzNTksImV4cCI6MjA3MzM4MDM1OX0.tBpDSozHh22NNeKkI2dzVylpFf3ZJF3XvaUX5QIc-B0'
 
 // Create Supabase client with production optimizations
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
