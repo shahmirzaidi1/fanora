@@ -1,21 +1,64 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* other config options here */
+  // Production optimizations
+  output: 'standalone',
+  poweredByHeader: false,
+  compress: true,
+  
+  // Image optimization
   images: {
     remotePatterns: [
       {
-        protocol: 'https', // You can also make this more generic if needed, e.g., by omitting it or using a pattern
-        hostname: '**', // This allows any hostname
-        // port: '', // Optional: Still defaults to standard ports. Can be omitted.
-        // pathname: '/**', // Optional: Still allows any path. Can be omitted if '**' for hostname is used.
+        protocol: 'https',
+        hostname: '**',
       },
       {
-        protocol: 'http', // It's good practice to also allow http if you truly want to allow *any* host,
-                          // as not all image sources will be https.
+        protocol: 'http',
         hostname: '**',
       }
     ],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60,
+  },
+
+  // Environment variables validation
+  env: {
+    CUSTOM_KEY: process.env.CUSTOM_KEY,
+  },
+
+  // Headers for security
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'origin-when-cross-origin',
+          },
+        ],
+      },
+    ];
+  },
+
+  // Redirects for production
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+    ];
   },
 };
 

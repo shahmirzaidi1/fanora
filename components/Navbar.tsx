@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link'; // Using Next.js Link for internal navigation
 import { LandingPageData } from '@/types/mainLandingPageData'; // Adjust path as needed
 import Logo from './misc/logo'; // Assuming Logo component exists
+import { useAuth } from '@/lib/auth-context';
 
 interface NavbarProps {
   data: LandingPageData['landing_nav'];
@@ -13,9 +14,18 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const { user, signOut } = useAuth();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleSignOut = async () => {
+    try {
+      await signOut();
+    } catch (error) {
+      console.error('Error signing out:', error);
+    }
   };
 
   useEffect(() => {
@@ -61,12 +71,26 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
           <button className="text-white hover:text-gray-50 p-2" aria-label="Search">
             <i className={data.searchIconClass}></i>
           </button>
-          <Link href={data.signUpLink} className="btn-primary text-sm text-white hover:text-gray-50">
-            {data.signUpButtonText}
-          </Link>
-          <Link href={data.logInLink} className="nav-link text-sm text-white hover:text-gray-50">
-            {data.logInButtonText}
-          </Link>
+          {user ? (
+            <div className="flex items-center space-x-3">
+              <span className="text-sm text-white">Welcome, {user.email}</span>
+              <button 
+                onClick={handleSignOut}
+                className="nav-link text-sm text-white hover:text-gray-50"
+              >
+                Sign Out
+              </button>
+            </div>
+          ) : (
+            <>
+              <Link href={data.signUpLink} className="btn-primary text-sm text-white hover:text-gray-50">
+                {data.signUpButtonText}
+              </Link>
+              <Link href={data.logInLink} className="nav-link text-sm text-white hover:text-gray-50">
+                {data.logInButtonText}
+              </Link>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu Button and Search Icon - Shown only on Mobile */}
@@ -106,20 +130,37 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
           </Link>
         ))}
         <div className="border-t border-gray-700 my-2"></div>
-        <Link
-            href={data.logInLink}
-            className="block py-2 px-4 text-sm text-white nav-link"
-            onClick={() => setIsMobileMenuOpen(false)} // Optional: close menu on link click
-        >
-          {data.logInButtonText}
-        </Link>
-        <Link
-            href={data.signUpLink}
-            className="block mx-4 my-2 btn-primary text-center text-sm py-2 text-white"
-            onClick={() => setIsMobileMenuOpen(false)} // Optional: close menu on link click
-        >
-          {data.signUpButtonText}
-        </Link>
+        {user ? (
+          <div className="px-4 py-2">
+            <div className="text-sm text-white mb-2">Welcome, {user.email}</div>
+            <button
+              onClick={() => {
+                handleSignOut();
+                setIsMobileMenuOpen(false);
+              }}
+              className="block w-full text-left py-2 text-sm text-white nav-link"
+            >
+              Sign Out
+            </button>
+          </div>
+        ) : (
+          <>
+            <Link
+                href={data.logInLink}
+                className="block py-2 px-4 text-sm text-white nav-link"
+                onClick={() => setIsMobileMenuOpen(false)} // Optional: close menu on link click
+            >
+              {data.logInButtonText}
+            </Link>
+            <Link
+                href={data.signUpLink}
+                className="block mx-4 my-2 btn-primary text-center text-sm py-2 text-white"
+                onClick={() => setIsMobileMenuOpen(false)} // Optional: close menu on link click
+            >
+              {data.signUpButtonText}
+            </Link>
+          </>
+        )}
       </div>
     </nav>
   );

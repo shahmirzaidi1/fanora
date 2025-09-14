@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css"; // Your global styles
 import { IBM_Plex_Sans } from 'next/font/google';
+import { AuthProvider } from '@/lib/auth-context';
 
 const majorMonoDisplay = IBM_Plex_Sans({
   weight: ['100', '200', '300', '400', '500', '600', '700'], // Include all font weights
@@ -54,9 +55,11 @@ export default function RootLayout({ // No longer async as data fetching is remo
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
       </head>
       <body className={`${majorMonoDisplay.className} text-gray-800 flex bg-black flex-col min-h-screen`}> {/* Sticky footer classes can remain if you plan to add footers per page */}
-        {/* {navData && <Navbar data={navData} />} // REMOVED */}
-        <main className="flex-grow bg-black">{children}</main>
-        {/* {footerData && <Footer data={footerData} />} // REMOVED */}
+        <AuthProvider>
+          {/* {navData && <Navbar data={navData} />} // REMOVED */}
+          <main className="flex-grow bg-black">{children}</main>
+          {/* {footerData && <Footer data={footerData} />} // REMOVED */}
+        </AuthProvider>
       </body>
     </html >
   );

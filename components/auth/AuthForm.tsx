@@ -3,8 +3,8 @@
 
 import React, { useState, FormEvent } from 'react';
 import Link from 'next/link';
-// import { signIn } from 'next-auth/react'; // For NextAuth.js integration
-// import { useRouter } from 'next/navigation'; // If you need to redirect programmatically
+import { useRouter } from 'next/navigation';
+import { auth } from '@/lib/supabase';
 
 interface AuthFormProps {
   mode: 'login' | 'signup';
@@ -17,7 +17,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ mode }) => {
   const [confirmPassword, setConfirmPassword] = useState(''); // Only for signup
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  // const router = useRouter(); // Initialize router if needed for redirects
+  const router = useRouter();
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -43,25 +43,18 @@ const AuthForm: React.FC<AuthFormProps> = ({ mode }) => {
         return;
     }
 
-    // --- NextAuth.js Integration Placeholder ---
+    // Supabase Authentication
     if (mode === 'login') {
       try {
         console.log('Attempting login with:', { email, password });
-        // const result = await signIn('credentials', {
-        //   redirect: false,
-        //   email,
-        //   password,
-        // });
-        // if (result?.error) {
-        //   setError(result.error || "Invalid credentials.");
-        // } else if (result?.ok) {
-        //   console.log('Login successful');
-        //   router.push('/dashboard'); // Example redirect
-        // }
-        // Mock success for demonstration:
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        console.log('Mock login successful');
-        // router.push('/dashboard'); // Uncomment and use for actual redirect
+        const { data, error } = await auth.signIn(email, password);
+        
+        if (error) {
+          setError(error.message || "Invalid credentials.");
+        } else if (data.user) {
+          console.log('Login successful');
+          router.push('/welcome'); // Redirect to welcome page after login
+        }
       } catch (err) {
         setError("Failed to login. Please try again.");
         console.error("Login error:", err);
@@ -71,26 +64,17 @@ const AuthForm: React.FC<AuthFormProps> = ({ mode }) => {
     } else { // Signup mode
       try {
         console.log('Attempting signup with:', { name, email, password });
-        // Example: API call to your backend for registration
-        // const response = await fetch('/api/auth/signup', { // Your actual signup endpoint
-        //   method: 'POST',
-        //   headers: { 'Content-Type': 'application/json' },
-        //   body: JSON.stringify({ name, email, password }),
-        // });
-        // const data = await response.json();
-        // if (!response.ok) {
-        //   setError(data.message || "Failed to create account.");
-        // } else {
-        //   console.log('Signup successful:', data);
-        //   // Optionally sign in the user automatically
-        //   // const loginResult = await signIn('credentials', { redirect: false, email, password });
-        //   // if (loginResult?.ok) router.push('/dashboard');
-        //   // else router.push('/login'); // Or redirect to login page
-        // }
-        // Mock success for demonstration:
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        console.log('Mock signup successful');
-        // router.push('/login'); // Redirect to login after signup
+        const { data, error } = await auth.signUp(email, password);
+        
+        if (error) {
+          setError(error.message || "Failed to create account.");
+        } else if (data.user) {
+          console.log('Signup successful:', data);
+          // Show success message and redirect to login
+          setError(null);
+          alert('Account created successfully! Please check your email to verify your account.');
+          router.push('/login');
+        }
       } catch (err) {
         setError("Failed to create account. Please try again.");
         console.error("Signup error:", err);
